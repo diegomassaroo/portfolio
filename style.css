@@ -1,0 +1,122 @@
+html,
+body {
+	margin: 0px;
+	margin-bottom: 18px;
+	padding: 0px;
+	background-color: white;
+
+	font-family: "FaseGrotesk", "Helvetica Neue", Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 14px;
+
+	font-style: normal;
+	font-stretch: normal;
+	font-kerning: normal;
+
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+
+	line-height: 1.4;
+}
+
+@font-face {
+	font-family: "FaseGrotesk";
+	src: url("assets/fonts/FaseGrotesk.woff2") format("woff2-variations"),
+		url("assets/fonts/FaseGrotesk.ttf") format("truetype-variations");
+	font-weight: 90;
+}
+
+@font-face {
+	font-family: "Helvetica Neue";
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.left {
+	padding: 5px 20px;
+	float: left;
+	width: 16%;
+}
+
+.main {
+	padding: 5px 20px;
+	float: right;
+	width: 84%;
+}
+
+.center {
+	padding: 0px;
+	float: left;
+	width: 37%;
+}
+
+.right {
+	padding: 0px;
+	float: right;
+	width: 60%;
+}
+
+@media screen and (max-width: 1000px) {
+	.left,
+	.main,
+	.center,
+	.right {
+		width: 100%;
+	}
+}
+
+a {
+	color: black;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	/*font-weight: 200;*/
+	cursor: pointer;
+}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+	max-width: 1000px;
+	position: relative;
+	margin: auto;
+	margin-top: 17px;  
+	padding: 0px 0px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	position: absolute;
+	top: 0%;
+	width: auto;
+	height: 100%;
+	padding: 0px 100px;
+	color: white;
+	opacity: 1;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+}
+
+/* On hover, add a grey background color */
+.next:hover {
+	cursor: url(assets/images/cursor_dx.png) 22 22, auto;
+	text-decoration: none;
+}
+
+.prev:hover {
+	cursor: url(assets/images/cursor_sx.png) 22 22, auto;
+	text-decoration: none;
+}
