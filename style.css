@@ -38,13 +38,13 @@ body {
 .left {
 	padding: 5px 20px;
 	float: left;
-	width: 16%;
+	width: 20%;
 }
 
 .main {
 	padding: 5px 20px;
 	float: right;
-	width: 84%;
+	width: 80%;
 }
 
 .center {
@@ -112,11 +112,11 @@ img {vertical-align: middle;}
 
 /* On hover, add a grey background color */
 .next:hover {
-	cursor: url(assets/images/cursor_dx.png) 22 22, auto;
+	cursor: url(assets/images/cursor_dx.png) 6 6, auto;
 	text-decoration: none;
 }
 
 .prev:hover {
-	cursor: url(assets/images/cursor_sx.png) 22 22, auto;
+	cursor: url(assets/images/cursor_sx.png) 6 6, auto;
 	text-decoration: none;
 }
