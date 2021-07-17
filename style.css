@@ -99,7 +99,7 @@ img {vertical-align: middle;}
 	top: 0%;
 	width: auto;
 	height: 100%;
-	padding: 0px 100px;
+	padding: 0px 135px;
 	color: white;
 	opacity: 1;
 	user-select: none;
@@ -119,4 +119,24 @@ img {vertical-align: middle;}
 .prev:hover {
 	cursor: url(assets/images/cursor_sx.png) 6 6, auto;
 	text-decoration: none;
+}
+
+.showmore .more, .showmore.show .dots {
+	display: none
+}
+
+.showmore.show .more {
+	display: inline
+}
+
+.showmore button {
+	font-family: "FaseGrotesk", "Helvetica Neue", Arial, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	font-size: 17px;
+	cursor: pointer;
+	display: block;
+	text-decoration: none;
+	border: none;
+	background-color: white;
+	padding: 0;
 }

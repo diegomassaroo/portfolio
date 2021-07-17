@@ -22,7 +22,9 @@
 
 		<div class="main">
 			<div class="center">
-				<p>2021<br>Fase Project<br>BA Thesis at <a href="https://isiaurbino.net/" target="_blank" class="">ISIA Urbino</a><br><br>Scientific studies have demonstrated that the use of larger weights like Medium, Semi-Bold or Bold increases legibility in adverse conditions of low contrast. The thesis proposes to augment the typeface’s weight in correspondence with the environment's light intensity, in order to facilitate the acquisition of information on display.</p>
+				<p class="showmore">2021<br>Fase Project<br>BA Thesis at <a href="https://isiaurbino.net/" target="_blank" class="">ISIA Urbino</a><br><br><span class="dots"></span><span class="more">Scientific studies have demonstrated that the use of larger weights like Medium, Semi-Bold or Bold increases legibility in adverse conditions of low contrast. The thesis proposes to augment the typeface’s weight in correspondence with the environment's light intensity, in order to facilitate the acquisition of information on display.</span>
+					<button>MORE</button>
+				</p>
 			</div>
 			<div class="right">
 				<div class="slideshow-container">
@@ -55,7 +57,9 @@
 
 		<div class="main">
 			<div class="center">
-				<p>2020<br>Mono<br><a href="https://isiaurbino.net/" target="_blank" class="">ISIA Urbino</a> project<br><br>The course required students to design and develop a brand identity. My brand identity is about a hypothetical furniture design company. Mono uses modern design to connect people with their work, their lives, their world. The company creates workplaces and residential furnishings that inspire, evolve, and endure.</p>
+				<p class="showmore">2020<br>Mono<br><a href="https://isiaurbino.net/" target="_blank" class="">ISIA Urbino</a> project<br><br><span class="dots"></span><span class="more">The course required students to design and develop a brand identity. My brand identity is about a hypothetical furniture design company. Mono uses modern design to connect people with their work, their lives, their world. The company creates workplaces and residential furnishings that inspire, evolve, and endure.</span>
+					<button>MORE</button>
+				</p>
 			</div>
 			<div class="right">
 				<div class="slideshow-container">
@@ -96,7 +100,9 @@
 
 		<div class="main">
 			<div class="center">
-				<p>2020<br>Caporetta<br><a href="http://www.superness.info/" target="_blank" class="">Superness</a><br><br>Caporetta is a display sans serif typeface conceived during the internship in the studio Superness in Milan and under the best guide of Alessio D’Ellena. The typeface is an improvement of Fukuro, a previous self-designed typeface. Therefore Caporetta takes Fukuro's soul and renews it by showing a more accurate and balanced aspect.</p>
+				<p class="showmore">2020<br>Caporetta<br><a href="http://www.superness.info/" target="_blank" class="">Superness</a><br><br><span class="dots"></span><span class="more">Caporetta is a display sans serif typeface conceived during the internship in the studio Superness in Milan and under the best guide of Alessio D’Ellena. The typeface is an improvement of Fukuro, a previous self-designed typeface. Therefore Caporetta takes Fukuro's soul and renews it by showing a more accurate and balanced aspect.</span>
+					<button>MORE</button>
+				</p>
 			</div>
 			<div class="right">
 				<div class="slideshow-container">
@@ -138,7 +144,9 @@
 
 		<div class="main">
 			<div class="center">
-				<p>2020<br>The Tartar Steppe<br><a href="https://isiaurbino.net/" target="_blank" class="">ISIA Urbino</a> project<br><br>The course's main purpose stands for a re-designing of the book "The Tartar Steppe" by Dino Buzzati. Having carefully read it, we have established the insertion of a series of key concepts: the stressful sense of reclusion between the fort's walls, the anguish of living and changing one's own position, and the cyclic time where every day repeats the previous ones. A frenchfold type of book has been printed, with the text incorporated within the internal pages. Readers are therefore obliged to tear out external pages in order to look into the internal ones. External pages have been designed to contain a flipbook which visually represents previous concepts.</p>
+				<p class="showmore">2020<br>The Tartar Steppe<br><a href="https://isiaurbino.net/" target="_blank" class="">ISIA Urbino</a> project<br><br><span class="dots"></span><span class="more">The course's main purpose stands for a re-designing of the book "The Tartar Steppe" by Dino Buzzati. Having carefully read it, we have established the insertion of a series of key concepts: the stressful sense of reclusion between the fort's walls, the anguish of living and changing one's own position, and the cyclic time where every day repeats the previous ones. A frenchfold type of book has been printed, with the text incorporated within the internal pages. Readers are therefore obliged to tear out external pages in order to look into the internal ones. External pages have been designed to contain a flipbook which visually represents previous concepts.</span>
+					<button>MORE</button>
+				</p>
 			</div>
 			<div class="right">
 				<div class="slideshow-container">
@@ -196,6 +204,13 @@
 				}
 				x[slideIndex[no]-1].style.display = "block";  
 			}
+
+			document.querySelectorAll(".showmore").forEach(function (p) {
+				p.querySelector("button").addEventListener("click", function () {
+					p.classList.toggle("show");
+					this.textContent = p.classList.contains("show") ? "LESS" : "MORE";
+				});
+			});
 		</script>
 
 	</body>
