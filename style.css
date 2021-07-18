@@ -7,7 +7,7 @@ body {
 
 	font-family: "FaseGrotesk", "Helvetica Neue", Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-size: 17px;
+	font-size: 15px;
 
 	font-style: normal;
 	font-stretch: normal;
@@ -132,7 +132,7 @@ img {vertical-align: middle;}
 .showmore button {
 	font-family: "FaseGrotesk", "Helvetica Neue", Arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-size: 17px;
+	font-size: 15px;
 	cursor: pointer;
 	display: block;
 	text-decoration: none;
