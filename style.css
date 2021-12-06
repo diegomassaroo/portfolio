@@ -50,13 +50,13 @@ body {
 .center {
 	padding: 0px;
 	float: left;
-	width: 37%;
+	width: 73%;
 }
 
 .right {
 	padding: 0px;
 	float: right;
-	width: 60%;
+	width: 25%;
 }
 
 @media screen and (max-width: 1000px) {
